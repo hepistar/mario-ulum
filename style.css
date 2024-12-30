@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #game-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background: url('background.jpg') repeat-x;
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid #000;
+    animation: scrollBackground 10s linear infinite;
+  }
+  
+  @keyframes scrollBackground {
+    from {
+      background-position: 0;
+    }
+    to {
+      background-position: -1600px;
+    }
+  }
+  
+  #score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000;
+    z-index: 10;
+  }
+  
+  #mario {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #obstacle {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    animation: moveObstacle 2s linear infinite;
+  }
+  
+  @keyframes moveObstacle {
+    from {
+      right: -50px;
+    }
+    to {
+      right: 800px;
+    }
+  }
+  #game-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background: url('background.jpg') repeat-x;
+    background-size: cover;
+    overflow: hidden;
+    border: 2px solid #000;
+    animation: scrollBackground 10s linear infinite;
+  }
+  
